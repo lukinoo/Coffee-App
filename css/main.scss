@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;500;700&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #6F6E7A;
+}
+
+header {
+    nav {
+        width: 90%;
+        margin: auto;
+        min-height: 15vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            font-family: 'Lobster', cursive;
+        }
+        .mode {
+            background: none;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            transition: all 0.5s ease;
+            svg {
+                fill: #fff;
+            }
+        }
+    }
+}
+
+.container {
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .box {
+        width: 20rem;
+        max-width: 100%;
+        min-height: 70vh;
+        background: #383844;
+        box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3), 0px 0px 50px rgba(0, 0, 0, 0.5);
+        border-radius: 30px;
+        z-index: 99;
+        .image-side {
+            height: 30vh;
+            padding: 0rem 2.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .coffe-image {
+                width: 12rem;
+            }
+        }
+        .titles {
+            height: 15vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0rem 2.5rem;
+            .coffe-title {
+                font-size: 1.8rem;
+                letter-spacing: 3px;
+                color: #E1E1E1;
+            }
+            .description {
+                font-size: 0.7rem;
+                color: #b8b8b8;
+            }
+        }
+        .button-sizes {
+            height: 12vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 0rem 2.5rem;
+            .sizes-title {
+                .size {
+                    color: #E1E1E1;
+                    font-size: 1rem;
+                }
+            }
+            .buttons {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                button {
+                    padding: 0.4rem 0.8rem;
+                    font-size: 1rem;
+                    border: 1px solid #6A6875;
+                    background: none;
+                    font-family: inherit;
+                    font-weight: bold;
+                    color: #E1E1E1;
+                    cursor: pointer;
+                }
+            }
+        }
+        .order-menu {
+            position: relative;
+            height: 10vh;
+            color: #ffffff;
+            .order-menu-wrapper {
+                position: absolute;
+                background: #F19265;
+                padding: 0rem 2.5rem;
+                bottom: -50%;
+                height: 90%;
+                left: 0;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-radius: 30px;
+                button {
+                    padding: 0.6rem 1.2rem;
+                    font-family: inherit;
+                    font-size: 0.8rem;
+                    border: none;
+                    outline: none;
+                    border-radius: 20px;
+                    background: #F4AB85;
+                    color: #E1E1E1;
+                    font-weight: bold;
+                    transition: transform 0.2s ease;
+                    cursor: pointer;
+                    &:active {
+                        transform: scale(0.96);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.dark-mode {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #fbfbfb;
+    clip-path: circle(0% at 94% 9%);
+    z-index: -1;
+}

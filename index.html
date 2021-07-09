@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Coffee time</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="logo">Coffee Time</h1>
+            <button class="mode" id="mode">
+                <svg height="30px" viewBox="-12 0 448 448.04455" width="30px" xmlns="http://www.w3.org/2000/svg"><path d="m224.023438 448.03125c85.714843.902344 164.011718-48.488281 200.117187-126.230469-22.722656 9.914063-47.332031 14.769531-72.117187 14.230469-97.15625-.109375-175.890626-78.84375-176-176 .972656-65.71875 37.234374-125.832031 94.910156-157.351562-15.554688-1.980469-31.230469-2.867188-46.910156-2.648438-123.714844 0-224.0000005 100.289062-224.0000005 224 0 123.714844 100.2851565 224 224.0000005 224zm0 0"/></svg>
+            </button>
+        </nav>
+    </header>
+    <section>
+        <div class="container">
+            <div class="item-wrapper">
+                <div class="box" id="box">
+                    <div class="image-side">
+                        <img class="coffe-image" src="./assets/coffee cup1.png" alt="coffe">
+                    </div>
+                    <div class="titles">
+                        <h1 class="coffe-title">Latte</h1>
+                        <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, aliquid.</p>
+                    </div>
+                    <div class="button-sizes">
+                        <div class="sizes-title">
+                            <h3 class="size">size</h3>
+                        </div>
+                        <div class="buttons">
+                            <button type="button">S</button>
+                            <button type="button">M</button>
+                            <button type="button">L</button>
+                        </div>
+                    </div>
+                    <div class="order-menu">
+                        <div class="order-menu-wrapper">
+                            <div class="order-button-wrapper">
+                                <button type="button">Add to Order</button>
+                            </div>
+                            <p class="price">$17,99</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="dark-mode" id="dark-mode"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js" integrity="sha512-2fk3Q4NXPYAqIha0glLZ2nluueK43aNoxvijPf53+DgL7UW9mkN+uXc1aEmnZdkkZVvtJZltpRt+JqTWc3TS3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./app.js" defer></script>
+</body>
+</html>
