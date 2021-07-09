@@ -202,7 +202,7 @@ header nav .mode svg {
 }
 
 .dark-mode {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -211,5 +211,23 @@ header nav .mode svg {
   -webkit-clip-path: circle(0% at 94% 9%);
           clip-path: circle(0% at 94% 9%);
   z-index: -1;
+}
+
+@media screen and (max-height: 375px) {
+  .container {
+    min-height: 85vh;
+  }
+  .container .box .image-side {
+    height: 40vh;
+  }
+  .container .box .titles {
+    height: 40vh;
+  }
+  .container .box .button-sizes {
+    height: 20vh;
+  }
+  .container .box .order-menu {
+    height: 15vh;
+  }
 }
 /*# sourceMappingURL=main.css.map */

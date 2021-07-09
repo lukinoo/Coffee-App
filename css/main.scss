@@ -142,7 +142,7 @@ header {
 }
 
 .dark-mode {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -150,4 +150,24 @@ header {
     background: #fbfbfb;
     clip-path: circle(0% at 94% 9%);
     z-index: -1;
+}
+
+@media screen and (max-height: 375px) {
+    .container {
+        min-height: 85vh;
+        .box {
+            .image-side {
+                height: 40vh;
+            }
+            .titles {
+                height: 40vh;
+            }
+            .button-sizes {
+                height: 20vh;
+            }
+            .order-menu {
+                height: 15vh;
+            }
+        }
+    }
 }
