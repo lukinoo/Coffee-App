@@ -58,7 +58,22 @@ header nav .mode svg {
           align-items: center;
 }
 
-.container .box {
+.container .item-wrapper {
+  width: 100%;
+  min-height: 85vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .item-wrapper .box {
   width: 20rem;
   max-width: 100%;
   min-height: 70vh;
@@ -66,10 +81,11 @@ header nav .mode svg {
   -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3), 0px 0px 50px rgba(0, 0, 0, 0.5);
           box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3), 0px 0px 50px rgba(0, 0, 0, 0.5);
   border-radius: 30px;
+  margin: 1.5rem;
   z-index: 99;
 }
 
-.container .box .image-side {
+.container .item-wrapper .box .image-side {
   height: 30vh;
   padding: 0rem 2.5rem;
   display: -webkit-box;
@@ -83,11 +99,11 @@ header nav .mode svg {
           align-items: center;
 }
 
-.container .box .image-side .coffe-image {
+.container .item-wrapper .box .image-side .coffe-image {
   width: 12rem;
 }
 
-.container .box .titles {
+.container .item-wrapper .box .titles {
   height: 15vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -102,18 +118,18 @@ header nav .mode svg {
   padding: 0rem 2.5rem;
 }
 
-.container .box .titles .coffe-title {
+.container .item-wrapper .box .titles .coffe-title {
   font-size: 1.8rem;
   letter-spacing: 3px;
   color: #E1E1E1;
 }
 
-.container .box .titles .description {
+.container .item-wrapper .box .titles .description {
   font-size: 0.7rem;
   color: #b8b8b8;
 }
 
-.container .box .button-sizes {
+.container .item-wrapper .box .button-sizes {
   height: 12vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -127,12 +143,12 @@ header nav .mode svg {
   padding: 0rem 2.5rem;
 }
 
-.container .box .button-sizes .sizes-title .size {
+.container .item-wrapper .box .button-sizes .sizes-title .size {
   color: #E1E1E1;
   font-size: 1rem;
 }
 
-.container .box .button-sizes .buttons {
+.container .item-wrapper .box .button-sizes .buttons {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -142,7 +158,7 @@ header nav .mode svg {
           justify-content: space-between;
 }
 
-.container .box .button-sizes .buttons button {
+.container .item-wrapper .box .button-sizes .buttons button {
   padding: 0.4rem 0.8rem;
   font-size: 1rem;
   border: 1px solid #6A6875;
@@ -153,13 +169,13 @@ header nav .mode svg {
   cursor: pointer;
 }
 
-.container .box .order-menu {
+.container .item-wrapper .box .order-menu {
   position: relative;
   height: 10vh;
   color: #ffffff;
 }
 
-.container .box .order-menu .order-menu-wrapper {
+.container .item-wrapper .box .order-menu .order-menu-wrapper {
   position: absolute;
   background: #F19265;
   padding: 0rem 2.5rem;
@@ -179,7 +195,7 @@ header nav .mode svg {
   border-radius: 30px;
 }
 
-.container .box .order-menu .order-menu-wrapper button {
+.container .item-wrapper .box .order-menu .order-menu-wrapper button {
   padding: 0.6rem 1.2rem;
   font-family: inherit;
   font-size: 0.8rem;
@@ -196,7 +212,7 @@ header nav .mode svg {
   cursor: pointer;
 }
 
-.container .box .order-menu .order-menu-wrapper button:active {
+.container .item-wrapper .box .order-menu .order-menu-wrapper button:active {
   -webkit-transform: scale(0.96);
           transform: scale(0.96);
 }
